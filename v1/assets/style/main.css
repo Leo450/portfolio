@@ -1,0 +1,279 @@
+@-moz-keyframes spin { 100% { -moz-transform:translateX(-50%) translateY(-50%) rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform:translateX(-50%) translateY(-50%) rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform:translateX(-50%) translateY(-50%) rotate(360deg); transform:translateX(-50%) translateY(-50%) rotate(360deg); } }
+
+
+
+body{
+    color:white;
+    background-color:black;
+}
+
+
+
+.bg{
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-image:url('../img/ep_naturalblack.png');
+    background-blend-mode:difference;
+    z-index:-999;
+}
+.core-bg{
+    width:50vw;
+    height:50vw;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+    z-index:-998;
+    opacity:0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcd489+0,fcd489+100&1+0,1+30,0+70 */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(252,212,137,1) 0%, rgba(252,212,137,1) 30%, rgba(252,212,137,0) 70%, rgba(252,212,137,0) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(252,212,137,1) 0%,rgba(252,212,137,1) 30%,rgba(252,212,137,0) 70%,rgba(252,212,137,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(252,212,137,1) 0%,rgba(252,212,137,1) 30%,rgba(252,212,137,0) 70%,rgba(252,212,137,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcd489', endColorstr='#00fcd489',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+
+.dot{
+    background-color:rgb(255, 255, 255);
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+    -webkit-box-shadow:0 0 1vw white;
+    -moz-box-shadow:0 0 1vw white;
+    box-shadow:0 0 1vw white;
+}
+.core{
+    width:4vw;
+    height:4vw;
+}
+.core-dot{
+    width:.25vw;
+    height:.25vw;
+}
+.core-dots .core-dot:nth-child(4){
+    width:.5vw;
+    height:.5vw;
+}
+.core-outer-dots{
+    -webkit-transform:translateX(-50%) translateY(-50%) rotate(0deg);
+    -moz-transform:translateX(-50%) translateY(-50%) rotate(0deg);
+    -ms-transform:translateX(-50%) translateY(-50%) rotate(0deg);
+    -o-transform:translateX(-50%) translateY(-50%) rotate(0deg);
+    transform:translateX(-50%) translateY(-50%) rotate(0deg);
+    -webkit-animation:spin 60s linear infinite;
+    -moz-animation:spin 60s linear infinite;
+    animation:spin 60s linear infinite;
+}
+.core-outer-dots .core-dot{
+    position:absolute;
+    margin:-.125vw;
+}
+.core-outer-dots .core-dot:nth-child(1){
+    -webkit-transform:rotate(0deg) translate(15.05vw) rotate(-0deg);
+    -moz-transform:rotate(0deg) translate(15.05vw) rotate(-0deg);
+    -ms-transform:rotate(0deg) translate(15.05vw) rotate(-0deg);
+    -o-transform:rotate(0deg) translate(15.05vw) rotate(-0deg);
+    transform:rotate(0deg) translate(15.05vw) rotate(-0deg);
+}
+.core-outer-dots .core-dot:nth-child(2){
+    -webkit-transform:rotate(22.5deg) translate(15.05vw) rotate(-22.5deg);
+    -moz-transform:rotate(22.5deg) translate(15.05vw) rotate(-22.5deg);
+    -ms-transform:rotate(22.5deg) translate(15.05vw) rotate(-22.5deg);
+    -o-transform:rotate(22.5deg) translate(15.05vw) rotate(-22.5deg);
+    transform:rotate(22.5deg) translate(15.05vw) rotate(-22.5deg);
+}
+.core-outer-dots .core-dot:nth-child(3){
+    -webkit-transform:rotate(45deg) translate(15.05vw) rotate(-45deg);
+    -moz-transform:rotate(45deg) translate(15.05vw) rotate(-45deg);
+    -ms-transform:rotate(45deg) translate(15.05vw) rotate(-45deg);
+    -o-transform:rotate(45deg) translate(15.05vw) rotate(-45deg);
+    transform:rotate(45deg) translate(15.05vw) rotate(-45deg);
+}
+.core-outer-dots .core-dot:nth-child(4){
+    -webkit-transform:rotate(67.5deg) translate(15.05vw) rotate(-67.5deg);
+    -moz-transform:rotate(67.5deg) translate(15.05vw) rotate(-67.5deg);
+    -ms-transform:rotate(67.5deg) translate(15.05vw) rotate(-67.5deg);
+    -o-transform:rotate(67.5deg) translate(15.05vw) rotate(-67.5deg);
+    transform:rotate(67.5deg) translate(15.05vw) rotate(-67.5deg);
+}
+.core-outer-dots .core-dot:nth-child(5){
+    -webkit-transform:rotate(90deg) translate(15.05vw) rotate(-90deg);
+    -moz-transform:rotate(90deg) translate(15.05vw) rotate(-90deg);
+    -ms-transform:rotate(90deg) translate(15.05vw) rotate(-90deg);
+    -o-transform:rotate(90deg) translate(15.05vw) rotate(-90deg);
+    transform:rotate(90deg) translate(15.05vw) rotate(-90deg);
+}
+.core-outer-dots .core-dot:nth-child(6){
+    -webkit-transform:rotate(112.5deg) translate(15.05vw) rotate(-112.5deg);
+    -moz-transform:rotate(112.5deg) translate(15.05vw) rotate(-112.5deg);
+    -ms-transform:rotate(112.5deg) translate(15.05vw) rotate(-112.5deg);
+    -o-transform:rotate(112.5deg) translate(15.05vw) rotate(-112.5deg);
+    transform:rotate(112.5deg) translate(15.05vw) rotate(-112.5deg);
+}
+.core-outer-dots .core-dot:nth-child(7){
+    -webkit-transform:rotate(135deg) translate(15.05vw) rotate(-135deg);
+    -moz-transform:rotate(135deg) translate(15.05vw) rotate(-135deg);
+    -ms-transform:rotate(135deg) translate(15.05vw) rotate(-135deg);
+    -o-transform:rotate(135deg) translate(15.05vw) rotate(-135deg);
+    transform:rotate(135deg) translate(15.05vw) rotate(-135deg);
+}
+.core-outer-dots .core-dot:nth-child(8){
+    -webkit-transform:rotate(157.5deg) translate(15.05vw) rotate(-157.5deg);
+    -moz-transform:rotate(157.5deg) translate(15.05vw) rotate(-157.5deg);
+    -ms-transform:rotate(157.5deg) translate(15.05vw) rotate(-157.5deg);
+    -o-transform:rotate(157.5deg) translate(15.05vw) rotate(-157.5deg);
+    transform:rotate(157.5deg) translate(15.05vw) rotate(-157.5deg);
+}
+.core-outer-dots .core-dot:nth-child(9){
+    -webkit-transform:rotate(180deg) translate(15.05vw) rotate(-180deg);
+    -moz-transform:rotate(180deg) translate(15.05vw) rotate(-180deg);
+    -ms-transform:rotate(180deg) translate(15.05vw) rotate(-180deg);
+    -o-transform:rotate(180deg) translate(15.05vw) rotate(-180deg);
+    transform:rotate(180deg) translate(15.05vw) rotate(-180deg);
+}
+.core-outline{
+    width:4.5vw;
+    height:4.5vw;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+    border:.05vw solid white;
+    border-right-color:transparent;
+    border-bottom-color:transparent;
+    z-index:-1;
+    -webkit-transform:translateX(-50%) translateY(-50%) rotate(0deg);
+    -moz-transform:translateX(-50%) translateY(-50%) rotate(0deg);
+    -ms-transform:translateX(-50%) translateY(-50%) rotate(0deg);
+    -o-transform:translateX(-50%) translateY(-50%) rotate(0deg);
+    transform:translateX(-50%) translateY(-50%) rotate(0deg);
+}
+.core-outline:nth-child(1){
+    -webkit-animation:spin 5s linear infinite;
+    -moz-animation:spin 5s linear infinite;
+    animation:spin 5s linear infinite;
+}
+.core-outline:nth-child(2){
+    width:5vw;
+    height:5vw;
+    -webkit-animation:spin 10s linear infinite;
+    -moz-animation:spin 10s linear infinite;
+    animation:spin 10s linear infinite;
+}
+.core-outline:nth-child(3){
+    width:5.5vw;
+    height:5.5vw;
+    -webkit-animation:spin 15s linear infinite;
+    -moz-animation:spin 15s linear infinite;
+    animation:spin 15s linear infinite;
+}
+.core-outline:nth-child(4){
+    width:10.9vw;
+    height:10.9vw;
+    border-right-color:white;
+    border-bottom-color:white;
+}
+.core-outline:nth-child(5){
+    width:30vw;
+    height:30vw;
+    border-right-color:white;
+    border-bottom-color:white;
+}
+.core-outline:nth-child(6){
+    width:32vw;
+    height:32vw;
+    border-right-color:white;
+    border-bottom-color:white;
+    border-width:.1vw;
+}
+.core-outline-square{
+    width:25vw;
+    height:25vw;
+    border-right-color:white;
+    border-bottom-color:white;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    opacity:.5;
+}
+.core-outline:nth-child(7){
+    -webkit-transform:translateX(-50%) translateY(-50%) rotate(45deg);
+    -moz-transform:translateX(-50%) translateY(-50%) rotate(45deg);
+    -ms-transform:translateX(-50%) translateY(-50%) rotate(45deg);
+    -o-transform:translateX(-50%) translateY(-50%) rotate(45deg);
+    transform:translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.core-light{
+    width:45vw;
+    height:45vw;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+    z-index:-2;
+    opacity:.25;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fee9bf+0,ffffff+70,ffffff+100&1+0,0+70,0+100 */
+    background: -moz-radial-gradient(center, ellipse cover, rgb(255, 255, 255) 0%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgb(255, 255, 255) 0%,rgba(255,255,255,0) 70%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgb(255, 255, 255) 0%,rgba(255,255,255,0) 70%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fee9bf', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+
+.letter{
+    margin-top:.25vw;
+    font-size:5vw;
+    text-shadow:0 0 10px white;
+    font-family:cinzel_decorativebold, sans-serif;
+}
+
+
+
+.baseline{
+    margin-top:9.5vw;
+    text-align:center;
+    font-size:1vw;
+    font-family:silkaregular, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:.25vw;
+}
+
+
+
+.line{
+    width:0;
+    height:.05vw;
+    background-color:white;
+}
+
+
+
+.menu{
+    width:61vw;
+    font-family:silkaregular, sans-serif;
+}
+.menu li{
+    position:absolute;
+    top:50%;
+    margin:0 2vw;
+    -webkit-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    -o-transform:translateY(-50%);
+    transform:translateY(-50%);
+    font-size:.75vw;
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:.4vw;
+}
+.menu li:nth-child(1){
+    right:100%;
+}
+.menu li:nth-child(2){
+    left:100%;
+}

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'cinzel_decorativebold';
+    src: url('../fonts/cinzel/cinzeldecorative-bold-webfont.woff2') format('woff2'),
+    url('../fonts/cinzel/cinzeldecorative-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'silkaregular';
+    src: url('../fonts/silka/silka-regular-webfont.eot');
+    src: url('../fonts/silka/silka-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/silka/silka-regular-webfont.woff2') format('woff2'),
+    url('../fonts/silka/silka-regular-webfont.woff') format('woff'),
+    url('../fonts/silka/silka-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
